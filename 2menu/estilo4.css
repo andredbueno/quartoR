@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    overflow: hidden;
+    sccroll-behavior: smooth;
+}
+html::-webkit-scrollbar{
+    display: none;
+}
+
+nav ul {
+    list-style: none;
+    align-items: center;
+    display: flex;
+    gap: 1.5em;
+    position: fixed;
+    height: 2em;
+    background: linear-gradient(to left, rgb(0, 255, 234),yellow, rgb(243, 67, 111));
+    width: 100%;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, .9);
+    padding-left: 1em;
+}
+a{
+    text-decoration: none;
+}
+a:visited {
+    color: rgb(48, 0, 58);
+}
+section{
+    min-height: 100vh;
+    padding-top: 2.5em;
+    padding-left: 1.5em;
+    color: rgb(48, 0, 58);
+}   
+#ini {
+    background: url(imagem1.jpg);
+    background-size: cover;
+}
+#ser {
+    background: url(imagem2.jpg);
+    background-size: cover;
+}
+#con {
+    background: url(imagem3.jpg);
+    background-size: cover;
+}
+#cur {
+    background: url(imagem4.jpg);
+    background-size: cover;
+}
+#sob {
+    background: url(imagem5.jpg);
+    background-size: cover;
+}
+#lon {
+    background: url(imagem6.jpg);
+    background-size: cover;
+}

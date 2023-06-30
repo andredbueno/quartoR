@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    margin: 20px;
+
+}
+.card {
+    width: 300px;
+    height: 300px;
+    float: left;
+}
+.card .frente {
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotatey(0deg);
+    transition: all .4s linear;
+}
+
+.card .fundo {
+    position: absolute;
+    transform: rotatey(180deg);
+    backface-visibility: hidden;
+    transition: all .4s linear;
+    
+}
+.card .fundo img{
+    filter: grayscale(100%);
+}
+
+.card:hover .frente {
+    transform: rotatey(-180deg);
+    cursor: pointer;
+}
+
+.card:hover .fundo {
+    transform: rotatey(0deg);
+    cursor: pointer;
+}
+
+h2 {
+    background: rgb(0, 0, 0);
+    width: 100%;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    bottom: 120px;
+    opacity: 0.7;
+    text-align: center;
+}
+#face{
+    background: rgb(30, 78, 238);
+}
+#whats{
+    background: rgb(89, 238, 30);
+}
+#dis{
+    background: rgb(27, 23, 238);
+}
+#yt{
+    background: rgb(238, 30, 30);
+}
